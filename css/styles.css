@@ -185,7 +185,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         background-color: initial;
@@ -203,8 +203,5 @@ body{
 
     .square:hover{
     opacity: 1;
-
     border: solid 0.1em rgb(216, 216, 216);
-
-
     }
