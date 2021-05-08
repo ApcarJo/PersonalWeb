@@ -41,7 +41,7 @@ body{
     align-items: center;
     height: 4em;
     width: 4em;
-    margin: 1em; /* ELIMINAR ANTES DE LA VERSIÓN FINAL*/
+    margin: 2em; /* ELIMINAR ANTES DE LA VERSIÓN FINAL*/
 }
 
  /* .gradients1{
@@ -181,6 +181,11 @@ body{
     }
 
     .send{
+        box-sizing: border-box; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         background-color: initial;
@@ -188,5 +193,18 @@ body{
         width: 4em;
         border-radius: 100%;
         border: solid 0.1em white;
-        margin: 1em;
+    }
+
+    .send:active{
+        transition: 0.1s cubic-bezier(.32,-0.45,.68,1.48);
+        height: 3.5em;
+        width: 3.5em;
+    }
+
+    .square:hover{
+    opacity: 1;
+
+    border: solid 0.1em rgb(216, 216, 216);
+
+
     }

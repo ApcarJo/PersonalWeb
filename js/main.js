@@ -17,11 +17,11 @@ let i=0;
 
 
 function changeColor() {
-        for(var i = 0; i < n; i ++) { //Implementar do while para borrar el resto de la cadena
+        for(var i = 0; i < ite; i ++) { //Implementar do while para borrar el resto de la cadena
         (function (i) {
             setTimeout(function () {
                 elms[i].innerHTML = arrayName[i];
-                elms[i].style.backgroundColor = color;
+                // elms[i].style.backgroundColor = white;
             }, 100*i);
           })(i);
           
