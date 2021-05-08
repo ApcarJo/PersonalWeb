@@ -17,19 +17,21 @@ let i=0;
 
 
 function changeColor() {
-        for(var i = 0; i < ite; i ++) {
+        for(var i = 0; i < n; i ++) { //Implementar do while para borrar el resto de la cadena
         (function (i) {
             setTimeout(function () {
                 elms[i].innerHTML = arrayName[i];
                 elms[i].style.backgroundColor = color;
             }, 100*i);
           })(i);
+          
         }
 }
 
 function sub(){
     product = document.getElementsByName("nombre")[0].value;
     let arrayName2 = Array.from(product);
+
     for(var i = 0; i < product.length; i ++) {
         (function (i) {
             setTimeout(function () {

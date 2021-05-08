@@ -1,9 +1,50 @@
 
 body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    flex-direction: column;
 }
 
- .gradients1{
+.header{
+    width: 20em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    flex-direction: row;
+}
+
+.b{
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    height: 50em;
+    width: 40em;
+    border-radius: 2em;
+    background-color: #1D1D1F;
+    /* #eeebdd #810000 #630000 #1b1717 */
+}
+
+.contenedor {
+
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 4em;
+    margin: 1em; /* ELIMINAR ANTES DE LA VERSIÓN FINAL*/
+}
+
+ /* .gradients1{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -40,66 +81,37 @@ body{
     width: 50em;
 
     background: linear-gradient(90deg, teal, yellow, transparent);
-} 
+}  */
 
-.prueba{
-    height: 44em;
-    width: 40em;
-
-
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(216, 216, 216);
+    font-size: 0.7em;
 }
 
-.b{
-    box-sizing: border-box; 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    flex-direction: row;
-
-    height: 50em;
-    width: 40em;
-    border-radius: 2em;
-    background-color: #eeebdd;
-    /* #eeebdd #810000 #630000 #1b1717 */
-}
-
-.contenedor {
-
-    box-sizing: border-box; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 1em;
-    height: 4em;
-    width: 4em;
-}
 .link{
     box-sizing: border-box; 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 1em;
     height: 4em;
     width: 4em;
-    border-radius: 10%;
-    background-image: linear-gradient(#810000, #eeebdd);
-    box-shadow: 0.05em 0.1em 0.1em 0.05em #1b1717;
-    border: solid 0.005em #630000;
+    border-radius: 0.6em;
+    border: solid 0.1em rgb(216, 216, 216);
+
+    text-decoration: none;
 
     text-decoration: unset;
-    color: #1b1717;
-    font: bold;
-    font-family: fantasy;
+    
     /* #eeebdd #810000 #630000 #1b1717 */
 }
 
 .link:hover{
     transition: 1s cubic-bezier(.32,-0.45,.68,1.48);
-    height: 0.3em;
-    width: 0.3em;
+    height: 3em;
+    width: 3em;
+    transform: rotate(360deg);
 }
 
 /* .text:hover{
@@ -112,51 +124,17 @@ body{
     width: 0.3em;
 } */
 
-.miclase {
 
-    background-color: aquamarine;
-    
-    padding: 15px;
-    
-    }
-    
-    .miclase:hover::after {
-    transition: 1s;
-    content: "Contenido insertado con CSS";
-    
-    
-    }
-    
-    .miclase::before {
-    
-    content: "Contenido insertado antes…";
-    
-    }
-
-    label {
-        display: block;
-        transition: 1s cubic-bezier(.32,-0.45,.68,1.48);
-        background: lightgrey;
-        width: 100px;
-        height: 100px;
-    }
-    
-    .demo:checked + label {
-        transition: 1s cubic-bezier(.32,-0.45,.68,1.48);
-        background: blue;
-        border-radius: 5em;
-        color: white;
-    }
 
     .divisorH{
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        flex-direction: row;
     
-        height: 4em;
-        width: 50em;
-    
-        background-color: teal;
+        background-color: rgba(0, 128, 128, 0);
     }
     
     .square{
@@ -165,17 +143,50 @@ body{
         justify-content: center;
         align-items: center;
     
-        padding: 1em;
-        height: 4em;
-        width: 4em;
+        height: 2em;
+        width: 2em;
         border-radius: 10%;
-        background-color: violet;
     
         text-decoration: unset;
-        color: #1b1717;
-        font: bold;
-        font-family: fantasy;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(216, 216, 216);
+
         /* #eeebdd #810000 #630000 #1b1717 */
-     
         
+    }
+
+    .nombre{
+        outline: none;
+        border-radius: 0.6em;
+        border: solid 0.1em white;
+        color: white;
+        background-color: rgba(0, 128, 128, 0);
+        font-size: 1em;
+        padding-left: 1em;
+    }
+
+    .welcome{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(216, 216, 216);
+    }
+
+    .table{
+        box-sizing: border-box; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+    }
+
+    .send{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: initial;
+        height: 4em;
+        width: 4em;
+        border-radius: 100%;
+        border: solid 0.1em white;
+        margin: 1em;
     }
