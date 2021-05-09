@@ -125,7 +125,7 @@ nav{
 .text1{
     font-family: 'Open Sans';
     color: #333652;
-    font-size: 2em;
+    font-size: 1.5em;
     text-decoration: none;
 }
 
@@ -182,13 +182,7 @@ nav{
     width: 0.3em;
 } */
 
-#nombre:hover{
-    transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
-    border-color: #333652;
-    box-shadow: 0em 0em 0.2em 0.1em white;
-}
-
-/* INDEX */
+    /* INDEX */
 .inputBox{
     box-sizing: border-box; 
     display: flex;
@@ -197,8 +191,7 @@ nav{
 
     flex-direction: column;
 
-    height: 40em;
-    width: 30em;
+    height:100%;
     border-radius: 2em;
     /* background-color: lawngreen; */
 }
@@ -241,7 +234,7 @@ nav{
 
 .nombre{
     height: 2em;
-    width: 100%;
+    width: 25em;
     outline: none;
     border-radius: 0.6em;
     border: solid 0.1em #333652;
@@ -249,6 +242,11 @@ nav{
     background-color: rgba(0, 128, 128, 0);
     font-size: 1em;
     padding-left: 1em;
+}
+#nombre:hover{
+    transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
+    border-color: #333652;
+    box-shadow: 0em 0em 0.2em 0.1em #4e537c;
 }
 
     
@@ -276,8 +274,10 @@ nav{
     align-items: center;
 
     color: white;
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
+    font-size: 1em;
+    margin: 1em;
     border-radius: 50%;
     border: none;
     background-color: #333652;
@@ -296,67 +296,47 @@ nav{
 
     
     /* PORTFOLIO */
+
 .youtube{
     box-sizing: border-box;
 
     height: auto;
     width: 30em;
-    border-width: 1em;
-    border: solid 0.1em #333652;
     border-radius: 0.6em;
+    border: solid 0em #333652;
+    margin: 1em;
 }
 
-.youtube:hover{
-    transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
-    border-color: white;
-    box-shadow: 0em 0em 0.2em 0.1em white;
-}
 
 .projectBox{
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    height: 54em;
-    width: 100%;
-
-}
-
-.project{
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    height: 54em;
+    height: 100%
 }
     
 .n64{
     height: auto;
     width: 30em;
-    border: solid 0.1em #333652;
+    border: solid 0em #333652;
     border-radius: 0.6em;
 }
 
-.n64:hover{
-    border-color: #90ADC6;
-    box-shadow: 0em 0em 0.2em 0.1em #90ADC6;
-}
     
     /* ABOUT ME */
+
 .storyBox{
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     /* justify-content: center;
     align-items: center; */
 
     height: 100%;
-    width: 25em;
+
 }
 
 .picture{
@@ -376,11 +356,11 @@ nav{
 .contactBox{
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+
     align-items: center;
 
     flex-direction: column;
-    height: 6em;
+    height: 100%;
 }
 
 form{
@@ -389,16 +369,5 @@ form{
     align-items: center;
 
     flex-direction: column;
-    
-}
-
-#enviarContact{
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-
-}
-
-#enviarContact:hover{
-    transition: 0.2s cubic-bezier(1, 0, 0, 1);
     
 }
