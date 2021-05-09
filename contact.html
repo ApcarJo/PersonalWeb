@@ -39,24 +39,35 @@
     
     <main>
         <div class="contactBox">
-            <p class="text">Ways you can contact me<br><br></p>
+            <p class="text1">Ways you can contact me</p>
         
             <a class="text1" href="https://www.linkedin.com/in/jos%C3%A9-luis-aparicio-4a644131/" target="_blank">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
-                LinkedIn<br>
+                LinkedIn
             </a>
 
-            <a class="text">
+            <a class="text1" href="mailto:hansokaz@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                E-mail<br>
+                E-mail
             </a>
         </div>
+        <div class="contactBox"></div>
+        <div class="contactBox"></div>
         <div class="contactBox">
-            <input class="text" name="contact" id="contactText">
+            <form name="form" action="" method="POST">
+                <br><br><br><br>
+                <input class="text nombre" name="contact" id="nombreContact" required="true" placeholder="Name">
+                <br><br>
+                <input class="text nombre" name="contact" id="emailContact" placeholder="Email">
+                <br><br>
+                <textarea class="text nombre" name="contact" id="textContact" placeholder="Your message"></textarea>
+                
+                <button onclick="" class="text1" name="enviar" id="enviarContact">Enviar</button>
+            </form>
+
         </div>
     </main>
 
-    <footer class="footer text">Hola</footer>
 
     <script src="https://kit.fontawesome.com/ac47b89bc3.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>

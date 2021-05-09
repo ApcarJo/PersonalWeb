@@ -7,6 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height: 100vh;
 
     flex-direction: column;
 }
@@ -23,12 +24,12 @@ header{
 
 main{
     display: flex;
-    justify-content: center;
+
     align-items: center;
     flex-direction: column;
 
     width: 100%;
-    height: 54em;
+    height: 100%;
     /* background-color: blue; */
     background-color: #E9EAEC;
     /* background-image: linear-gradient(to right, transparent, grey 15%, grey 85%, transparent); */
@@ -124,7 +125,14 @@ nav{
 .text1{
     font-family: 'Open Sans';
     color: #333652;
-    font-size: 1em;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.text2{
+    font-family: 'Open Sans';
+    color: #333652;
+    font-size: 4em;
     text-decoration: none;
 }
 
@@ -134,13 +142,27 @@ nav{
     justify-content: center;
     align-items: center;
 
-    height: 4em;
-    width: 8em;
+    height: 2em;
+    width: 7em;
 
     border-right: solid 0.1em #333652;
-    border-left: solid 0.1em #333652; 
+    text-decoration: none;
+
+    
+    /* #eeebdd #810000 #630000 #1b1717 */
+}
+.link1{
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 2em;
+    width: 7em;
 
     text-decoration: none;
+    border-right: solid 0.1em #333652;
+    border-left: solid 0.1em #333652;
 
     
     /* #eeebdd #810000 #630000 #1b1717 */
@@ -148,7 +170,7 @@ nav{
 
 .link:hover .text{
     transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
-    color: rgb(233, 255, 234);
+    color: rgb(255, 255, 255);
 } 
 /* .text:hover{
     box-sizing: border-box; 
@@ -162,19 +184,21 @@ nav{
 
 #nombre:hover{
     transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
-    border-color: #90ADC6;
-    box-shadow: 0em 0em 0.2em 0.1em #90ADC6;
+    border-color: #333652;
+    box-shadow: 0em 0em 0.2em 0.1em white;
 }
 
 /* INDEX */
 .inputBox{
-
     box-sizing: border-box; 
     display: flex;
 
-    flex-direction: row;
-    height: 10em;
-    width: 20em;
+    align-items: center;
+
+    flex-direction: column;
+
+    height: 40em;
+    width: 30em;
     border-radius: 2em;
     /* background-color: lawngreen; */
 }
@@ -217,6 +241,7 @@ nav{
 
 .nombre{
     height: 2em;
+    width: 100%;
     outline: none;
     border-radius: 0.6em;
     border: solid 0.1em #333652;
@@ -234,6 +259,8 @@ nav{
     align-items: center;
 
     flex-direction: column;
+    
+    width: 100%;
 
     border-radius: 0.5em;
     background-color: rgba(0, 128, 128, 0);
@@ -248,19 +275,17 @@ nav{
     justify-content: center;
     align-items: center;
 
-    color: #333652;
-    height: 2em;
+    color: white;
+    height: 4em;
     width: 4em;
-    border: solid 0em white;
-    background-color: transparent;
-
-    border-right: solid 0.1em #333652;
-    border-left: solid 0.1em #333652;
+    border-radius: 50%;
+    border: none;
+    background-color: #333652;
 }
 
 .send:active{
     transition: 0.1s cubic-bezier(.32,-0.45,.68,1.48);
-    color: rgb(233, 255, 234);
+    background-color: #484c72;
 }
 
 .square:hover{
@@ -283,8 +308,8 @@ nav{
 
 .youtube:hover{
     transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
-    border-color: #90ADC6;
-    box-shadow: 0em 0em 0.2em 0.1em #90ADC6;
+    border-color: white;
+    box-shadow: 0em 0em 0.2em 0.1em white;
 }
 
 .projectBox{
@@ -336,25 +361,44 @@ nav{
 
 .picture{
     width: 20em;
-    border-radius: 100%;
-    border: solid 0.1em #333652;
-    box-shadow: 0em 0em 0.4em 0.2em #333652;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0em 0em 0.4em 0.1em #333652;
 }
 
 #story{
     display: flex;
     text-align: center;
-
-    text-shadow: 0.1em 0.1em 0.3em #333652;
-    font-size: 2em;
 }
 
 /* CONTACT */
 
 .contactBox{
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
 
     flex-direction: column;
+    height: 6em;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    
+}
+
+#enviarContact{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+#enviarContact:hover{
+    transition: 0.2s cubic-bezier(1, 0, 0, 1);
+    
 }
