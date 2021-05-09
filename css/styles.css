@@ -41,10 +41,11 @@ footer{
     align-items: center;
     flex-direction: row;
 
-    border-top: solid 0.1em #333652;
+    border-top: solid 0.05em #4d4d4d;
     height: 3em;
     width: 100%;
     background-color: #E9EAEC;
+
 }
 
 nav{
@@ -69,7 +70,7 @@ nav{
     align-items: center;
     flex-direction: row;
     height: 5em;
-    width: 20em;
+    width: 25em;
     border-radius: 2em;
     /* background-color: lawngreen; */
 }
@@ -120,9 +121,11 @@ nav{
     font-family: 'Open Sans';
     color: #333652;
     font-size: 1em;
+    text-decoration: none;
 }
 
 .text1{
+    align-items: center;
     font-family: 'Open Sans';
     color: #333652;
     font-size: 1.5em;
@@ -186,7 +189,6 @@ nav{
 .inputBox{
     box-sizing: border-box; 
     display: flex;
-
     align-items: center;
 
     flex-direction: column;
@@ -274,8 +276,8 @@ nav{
     align-items: center;
 
     color: white;
-    height: 3em;
-    width: 3em;
+    height: 4em;
+    width: 4em;
     font-size: 1em;
     margin: 1em;
     border-radius: 50%;

@@ -5,7 +5,8 @@ var product;
 let ite = nombre.length;
 console.log(`Hola ${nombre}, tu nombre tiene ${length} letras`);
 
-let arrayName = Array.from(nombre);
+let arrayName = "Bienvenido!";
+
 
 var square = document.getElementsByClassName("square");
 var n = square.length;
@@ -15,7 +16,7 @@ var j=0;
 function sub(){
     product = document.getElementsByName("nombre")[0].value;
     let arrayName2 = Array.from(product);
-
+    
     for(var i = 0; i < arrayName2.length; i ++) { //Implementar do while para borrar el resto de la cadena -- DONE
         (function (i) {
             setTimeout(function () {
