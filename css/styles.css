@@ -175,6 +175,10 @@ nav{
     transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
     color: rgb(255, 255, 255);
 } 
+.link1:hover .text{
+    transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
+    color: rgb(255, 255, 255);
+} 
 /* .text:hover{
     box-sizing: border-box; 
     display: flex;
