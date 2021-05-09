@@ -41,7 +41,7 @@ footer{
     flex-direction: row;
 
     border-top: solid 0.1em #333652;
-    height: 8.5em;
+    height: 3em;
     width: 100%;
     background-color: #E9EAEC;
 }
@@ -117,7 +117,7 @@ nav{
 .text{
     font-family: 'Open Sans';
     color: #333652;
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
 .text1{
@@ -133,24 +133,19 @@ nav{
     align-items: center;
 
     height: 4em;
-    width: 4em;
-    border-radius: 0.6em;
-    border: solid 0.1em #333652;
+    width: 20em;
+
+    border-right: solid 0.1em #333652;
+    border-left: solid 0.1em #333652; 
 
     text-decoration: none;
 
-    text-decoration: unset;
     
     /* #eeebdd #810000 #630000 #1b1717 */
 }
 
-.link:hover{
+.link:hover .text{
     transition: 0.2s cubic-bezier(.32,-0.45,.68,1.48);
-    border-color: #90ADC6;
-    box-shadow: 0em 0em 0.2em 0.1em #90ADC6;
-}
-
-.link:hover .navButtons{
     color: #90ADC6;
 } 
 /* .text:hover{
@@ -324,6 +319,8 @@ nav{
     /* ABOUT ME */
     .storyBox{
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         /* justify-content: center;
         align-items: center; */
@@ -333,6 +330,7 @@ nav{
     }
 
     .picture{
+        width: 20em;
         border-radius: 100%;
         border: solid 0.1em #333652;
         box-shadow: 0em 0em 0.4em 0.2em #333652;
