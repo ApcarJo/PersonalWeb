@@ -9,11 +9,47 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="a">
+            <div class="contenedor">
+                <a class="link" href="contact.html" target="_parent">
+                    <p class="text" id="contact">Contact</p>
+                </a>
+            </div>
 
-    <div class="miclase">Este contenido está en el propio HTML.</div>
+            <div class="contenedor">
+                <a class="link" id="portfolio" href="portfolio.html" target="_parent">
+                    <p class="text" id="portfolio">Portfolio</p>
+                </a>
+            </div>
 
-    <input type="checkbox" class="demo"/>
-    <label for="demo">I'm a square. Click me.</label>
+            <div class="contenedor">
+                <a class="link" href="index.html" target="_self">
+                    <p class="text" id="home">Home</p>
+                </a>
+            </div>
+        </div>
+        <div class="a"></div>
+    </header>
+    
+    <main>
+        <div class="contenedor">
+            <form name="form" action="" method="get">
+                <p class="welcome" >Si es tan amable, escriba su nombre... </p>
+                <input type="text" class="nombre" name="nombre" id="nombre" placeholder="escribe tu nombre" required/>   
+            </form>
+            <!-- <button onclick="sub()" class="send" name="enviar" id="enviar">Enviar</button> -->
+        </div>
+
+        <div class="contenedor">
+            <div class="box">
+                <button onclick="sub()" class="send" name="enviar" id="enviar">Enviar</button>
+                <!-- <button onclick="sub()" class="send" name="enviar" id="enviar">Enviar</button> -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">Hola</footer>
 
 
     <script src="js/main.js"></script>
