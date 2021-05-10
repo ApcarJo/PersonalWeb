@@ -305,7 +305,7 @@ nav{
 .youtube{
     box-sizing: border-box;
 
-    height: auto;
+    height: 15em;
     width: 20em;
     border-radius: 0.6em;
     border: solid 0em #333652;
@@ -317,7 +317,7 @@ nav{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 
     height: 100%;
     width: auto;
@@ -339,8 +339,7 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    /* justify-content: center */
 
     height: 100%;
 
@@ -380,6 +379,10 @@ form{
 
 @media (max-width: 50em){
     .footer{
+        flex-direction: column;
+    }
+
+    .projectBox{
         flex-direction: column;
     }
 }
