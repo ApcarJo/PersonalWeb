@@ -13,7 +13,13 @@ var n = square.length;
 let i=0;
 var j=0;
 
-function sub(){
+document.body.onkeyup = function(e){
+    if(e.keyCode == 17){
+        sub();
+    }
+}
+
+const sub = () => {
     product = document.getElementsByName("nombre")[0].value;
     let arrayName2 = Array.from(product);
     
@@ -30,16 +36,17 @@ function sub(){
     };
 };
 
-// product = document.getElementsById("nombre")[0].value;
-// let arrayName2 = Array.from(product);
 
-//     product.addEventListener("keydown", (e) {
+// var product3 = document.getElementsById("nombre")[0].value;
+// let arrayName3= Array.from(product3);
+
+//     .addEventListener("onkeydown", (e) {
 //         if (e.keyCode === 13) {
 
-//             for(var i = 0; i < arrayName2.length; i ++) {
+//             for(var i = 0; i < arrayName3.length; i ++) {
 //                 (function (i) {
 //                     setTimeout(function () {
-//                         square[i].innerHTML = arrayName2[i];
+//                         square[i].innerHTML = arrayName3[i];
 //                     }, 100*i);
 //                 })(i);
 //             }
